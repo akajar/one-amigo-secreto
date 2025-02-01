@@ -9,5 +9,15 @@ function agregarAmigo() {
     else {
         amigos.push(nombreAmigo);
         document.querySelector('#amigo').value = '';
+        actualizarAmigos();
+    }
+}
+
+function actualizarAmigos(){
+    const listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = '';
+
+    for(const amigo of amigos){
+        listaAmigos.innerHTML += `<li>${amigo}</li>`;
     }
 }
