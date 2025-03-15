@@ -7,6 +7,10 @@ function agregarAmigo() {
         alert("Por favor, inserte un nombre.")
     }
     else {
+        if (amigos.includes(nombreAmigo)) {
+            alert("El nombre ya fue ingresado");
+            return
+        }
         amigos.push(nombreAmigo);
         document.querySelector('#amigo').value = '';
         actualizarAmigos();
