@@ -14,6 +14,7 @@ function agregarAmigo() {
         amigos.push(nombreAmigo);
         document.querySelector('#amigo').value = '';
         actualizarAmigos();
+        document.querySelector('#limpiar').disabled = false;
     }
 }
 
@@ -37,4 +38,11 @@ function sortearAmigo(){
         const resultado = document.getElementById('resultado');
         resultado.innerHTML = `<li>${mensaje}</li>`
     }
+}
+
+function limpiarLista(){
+    amigos = [];
+    document.getElementById('listaAmigos').innerHTML = '';
+    document.getElementById('resultado').innerHTML = '';
+    document.getElementById('limpiar').disabled = true;
 }
