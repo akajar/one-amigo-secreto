@@ -164,3 +164,25 @@ ul {
 .button-clear {
     margin-top: 10%;
 }
+
+#listaAmigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#listaAmigos > li {
+    background-color:  var(--color-primary);
+    color: var(--color-white);
+    margin: 20px 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+}
+
+#listaAmigos #elegido {
+    background-color: #FFA500;
+    font-weight: bold;
+    transform: scale(1.1);
+}
