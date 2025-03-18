@@ -31,7 +31,7 @@ Este es el proyecto final de la formación **Principiante en Programación G8 - 
 - Abrir el archivo *index.html* en el navegador de tu preferencia
 
 # Prueba la aplicación en linea
-Link del proyecto publicado: 
+Link del proyecto publicado: [](https://akajar.github.io/)
 
 # Tecnologías utilizadas
 HTML + CSS + JavaScript
